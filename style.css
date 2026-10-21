@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containner__tittle{
+    background-color: #1C2541;
+    height: 4em;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main */
+
+.containner__Presentacion{
+    background-color: #F6E2B3;
+    height: 40em;
+    width: 100%;
+    display: flex;
+    
+}
+
+.presentacion__seccion{
+    width: 50%;
+    height: 100%;
+}
+
+/* Derecha */
+
+.Presentacion__derecha{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4em;
+}
+/* 
+.pButtom{
+    display: flex;
+    justify-content: center;
+}
+
+.buttomLink{
+    text-decoration: none;
+    color: black;
+    background-color: pink;
+    height: 3em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 2em;
+    font-family: montserrat;
+    font-weight: bold;
+} */
+
+/* izquierda */
+
+.Presentacion__izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.izquierda__img{
+    width: 40em;
+    height: 30em;
+    border-radius: 4em;
+    position: absolute;
+    animation: cambio 15s infinite;
+}
+
+.img1{
+    animation-delay: 0s;
+}
+.img2{
+    animation-delay: 3s;
+}
+.img3{
+    animation-delay: 6s;
+}
+.img4{
+    animation-delay: 9s;
+}
+.img5{
+    animation-delay: 12s;
+}
+
+@keyframes cambio {
+    0%, 19% {
+        opacity: 1;
+    }
+
+    20%, 100% {
+        opacity: 0;
+    }
+}
+
+/* redes */
+
+.containner__redes{
+    background-color: #5BC0BE;
+}
+
+.containner__redes{
+    height: 40em ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes{
+
+    width: 25em;
+    height: 25em;
+    border-radius: 3em;
+    background: rgb(230, 230, 230);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.icon{
+    height: 10em;
+    height: 10em;
+    margin: 2em;
+}
+
+
+/* social */
+
+.containner__social{
+    height: 20em;
+    width: 100%;
+}
+
+.buttomRedes{
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+    height: 2em;
+    width: 8em;
+    border-radius: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttomRedesFace{
+    background-color: #0866ff;
+    color: white;
+}
+
+.buttomRedesYou{
+    background-color: #ff0000;
+    color:white;
+}
+
+.buttomRedesInsta{
+    color: white;
+    background: linear-gradient(#515bd4,#8134af,#DD2A7B,#feda77,#f58629);
+
+}
+
+.buttomRedesTikTok{
+    color: white;
+    background: black;
+
+
+}
+
+
+
+.containner__facebook{
+    background-color: #0866ff;
+}
+
+/* .redesYou{
+    background-color: #2D4059;
+} */
+
+.containner__instagram{
+
+   background: linear-gradient(#515bd4,#8134af,#DD2A7B,#feda77,#f58629);
+}
+
+
+
+.mapContainner{
+    display: flex;
+    background-color: #F6E2B3;
+
+}
+
+.mapTittle{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    display: block;
+    width: 50%;
+}
+
+@media(max-width:768px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .containner{
+        width: 100%;
+        flex-direction: column;
+    }
+   
+
+    /* main */
+    .containner__Presentacion{
+        width: 100%;
+        height: 45em;
+        display: flex;
+        flex-direction: column;
+    }
+    .presentacion__seccion{
+        height: 50%;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        gap: 0;
+    }
+    /* mainDerecho */
+    .Presentacion__derecha{
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+    }
+
+    /* mainIzquierdo */
+    .Presentacion__izquierda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .izquierda__img{
+        width: 25em;
+        height: 20em;
+        border: 1em;
+    }
+
+    /* redes */
+    .containner__redes{
+        width: 100%;
+        height: 110em;
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box;
+    }
+
+    /* mapa */
+    .mapContainner{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .map{
+        width: 25em;
+        height: 25em;
+    }
+    
+}
